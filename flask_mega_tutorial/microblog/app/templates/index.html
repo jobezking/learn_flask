@@ -1,9 +1,20 @@
 <!doctype html>
 <html>
   <head>
-    <title>>{{ title }} - Life Expectancy Calculator</title>
+    {% if title %}
+    <title>{{ title }} - Life Expectancy Calculator</title>
+    {% else %}
+    <title>{{ title }} - Life Expectancy Calculator</title>
+    {% endif %}
   </head>
   <body>
     <h3>{{ page_title.text }}</h3>
+    <ul>
+      {% for demographic in demographics %}
+        {% for key, value in demographic.items() %}
+          <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
   </body>
 </html>
