@@ -1,13 +1,6 @@
-<!doctype html>
-<html>
-  <head>
-    {% if title %}
-    <title>{{ title }} - Life Expectancy Calculator</title>
-    {% else %}
-    <title>{{ title }} - Life Expectancy Calculator</title>
-    {% endif %}
-  </head>
-  <body>
+{% extends "base.html" %} 
+
+{% block content %}
     <h3>{{ page_title.text }}</h3>
     <ul>
       {% for demographic in demographics %}
@@ -16,5 +9,4 @@
         {% endfor %}
       {% endfor %}
     </ul>
-  </body>
-</html>
+{% endblock %}
