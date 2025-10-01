@@ -1,15 +1,8 @@
 from app import app
+from flask import render_template
 
 @app.route('/')
 @app.route('/index')
 def index():
     page_title = {'text': 'Life Expectancy Calculator'}
-    return '''
-    <html>
-        <head>
-            <title>Home Page - Life Expectancy Calculator</title>
-        </head>
-        <body>
-            <h3>''' + page_title['text'] + '''</h3>
-        </body>
-    </html>'''
+    return render_template('index.html', title='Home', page_title=page_title)
