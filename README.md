@@ -9,7 +9,7 @@ venv/bin/pip3.13 install --upgrade pip
 venv/bin/pip3.13 install --upgrade pip3  
 venv/bin/pip3.13 install --upgrade pip3.13  
 venv/bin/pip3.13 install mglearn openpyxl pandas numpy matplotlib seaborn scikit-learn flask  
-venv/bin/pip3.13 install python-dotenv pandas-stubs  
+venv/bin/pip3.13 install python-dotenv pandas-stubs flask-wtf  
 source venv/bin/activate  
 which python3.13  
 which python  
