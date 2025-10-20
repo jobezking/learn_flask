@@ -1,0 +1,20 @@
+python3.13 in_and_out/app.py
+
+Interaction Flow
+Browser requests / → Flask routes it to index() in in_and_out.py.
+
+GET request → index.html is rendered with result=None.
+
+User submits form → POST request with numbers + string.
+
+in_and_out.py computes average, concatenates with string, sets result.
+
+Template re-renders with result displayed.
+
+This separation is the standard Flask pattern:
+
+app.py = driver / app factory
+
+in_and_out.py = business logic + routes
+
+index.html = presentation

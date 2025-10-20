@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>Average Calculator</title>
+</head>
+<body>
+    <h2>Enter 3 numbers and a string</h2>
+    <form method="post">
+        <label>Number 1: <input type="number" step="any" name="num1" required></label><br><br>
+        <label>Number 2: <input type="number" step="any" name="num2" required></label><br><br>
+        <label>Number 3: <input type="number" step="any" name="num3" required></label><br><br>
+        <label>String: <input type="text" name="text" required></label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if result %}
+        <h3>Result:</h3>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
+
