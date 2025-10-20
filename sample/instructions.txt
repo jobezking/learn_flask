@@ -22,6 +22,7 @@ index.html = presentation
 For VSCode debug
 pick any breakpoints in advance
 create .vscode folder and place launch.json in it
+Enter F1 and select virtual environment
 Choose "Run and Debug" or CTRL+SHIFT+D
 select "flask" from dropdown. 
 http://localhost:5000
