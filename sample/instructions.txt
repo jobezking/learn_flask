@@ -18,3 +18,11 @@ app.py = driver / app factory
 in_and_out.py = business logic + routes
 
 index.html = presentation
+
+For VSCode debug
+pick any breakpoints in advance
+create .vscode folder and place launch.json in it
+Choose "Run and Debug" or CTRL+SHIFT+D
+select "flask" from dropdown. 
+http://localhost:5000
+Cycle through app.py a few times, it takes awhile
